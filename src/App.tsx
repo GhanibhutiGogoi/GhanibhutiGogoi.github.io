@@ -56,8 +56,22 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="about" className="pt-24 pb-20 px-6">
-        <div className="max-w-6xl mx-auto">
+      <section id="about" className="relative pt-24 pb-20 px-6 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 w-full h-full z-0"
+          style={{
+            backgroundImage: "url('/Background.jpg')", // Change to your image filename
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.25, // Adjust for desired darkness
+          }}
+          aria-hidden="true"
+        />
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-white/60 z-10" aria-hidden="true" />
+
+        <div className="max-w-6xl mx-auto relative z-20">
           <div className="text-center">
             <div className="w-32 h-32 mx-auto mb-8">
               <img
@@ -69,30 +83,30 @@ const App = () => {
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
               Ghanibhuti Gogoi
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 mb-8">
-              AI Engineering Student & Research Intern
-            </p>
-            <p className="text-lg text-slate-700 max-w-3xl mx-auto mb-8">
-              Passionate about artificial intelligence, 3D development, and creating innovative solutions.
-              Currently pursuing B.Eng. in Artificial Intelligence at HKUST-GZ and working on cutting-edge
-              research projects involving AI, computer vision, and interactive technologies.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <a href="mailto:ghanibhutigogoi@gmail.com"
-                 className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                <Mail size={20} />
-                Contact Me
-              </a>
-              <a href="https://www.linkedin.com/in/ghanibhuti-gogoi-365820229/"
-                 className="flex items-center gap-2 px-6 py-3 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-colors">
-                <Linkedin size={20} />
-                LinkedIn
-              </a>
-            </div>
-            <div className="flex items-center justify-center gap-2 text-slate-600">
-              <MapPin size={18} />
-              <span>Guangzhou, Guangdong, China</span>
-            </div>
+                        <p className="text-xl md:text-2xl text-slate-600 mb-8">
+                    AI Engineering Student & Research Intern
+                  </p>
+                  <p className="text-lg text-slate-700 max-w-3xl mx-auto mb-8">
+                    Passionate about artificial intelligence, 3D development, and creating innovative solutions.
+                    Currently pursuing B.Eng. in Artificial Intelligence at HKUST-GZ and working on cutting-edge
+                    research projects involving AI, computer vision, and interactive technologies.
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-4 mb-8">
+                    <a href="mailto:ghanibhutigogoi@gmail.com"
+                      className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                      <Mail size={20} />
+                      Contact Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/ghanibhuti-gogoi-365820229/"
+                      className="flex items-center gap-2 px-6 py-3 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-colors">
+                      <Linkedin size={20} />
+                      LinkedIn
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 text-slate-600">
+                    <MapPin size={18} />
+                    <span>Guangzhou, Guangdong, China</span>
+                  </div>
           </div>
         </div>
       </section>
