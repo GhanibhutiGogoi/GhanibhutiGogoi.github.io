@@ -27,8 +27,8 @@ Visit the live website: [https://GhanibhutiGogoi.github.io/](https://GhanibhutiG
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ghanibhuti-portfolio.git
-cd ghanibhuti-portfolio
+git clone https://github.com/GhanibhutiGogoi/GhanibhutiGogoi.github.io.git
+cd GhanibhutiGogoi.github.io
 ```
 
 2. Install dependencies:
@@ -63,7 +63,7 @@ This repository is configured with GitHub Actions for automatic deployment. Simp
    - Select "GitHub Actions" as the source
 4. Push changes to the `main` branch
 
-The site will automatically deploy to `https://yourusername.github.io/ghanibhuti-portfolio/`
+The site will automatically deploy to `https://GhanibhutiGogoi.github.io/`
 
 ### Manual Deployment
 
@@ -134,5 +134,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Location**: Guangzhou, Guangdong, China
 
 ---
-
-**Note**: Remember to update the repository URL, username, and personal information before deploying your own version of this portfolio.
