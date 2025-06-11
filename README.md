@@ -12,7 +12,7 @@ A modern, responsive portfolio website showcasing Ghanibhuti Gogoi's education, 
 
 ## 🚀 Live Demo
 
-Visit the live website: [https://yourusername.github.io/ghanibhuti-portfolio/](https://yourusername.github.io/ghanibhuti-portfolio/)
+Visit the live website: [https://GhanibhutiGogoi.github.io/](https://GhanibhutiGogoi.github.io/)
 
 ## 🛠️ Tech Stack
 
