@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb, Instagram, Menu, X } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb, Menu, X } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -393,14 +393,14 @@ const App = () => {
       </section>
 
       {/* Contact Section */}
-     <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Get In Touch</h2>
           <p className="text-lg text-slate-700 mb-12">
             I'm always interested in discussing new opportunities, collaborations, or just having a chat about AI and technology.
           </p>
-      
-          <div className="flex flex-col sm:flex-row justify-center gap-6 flex-wrap">
+
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
             <a href="mailto:ghanibhutigogoi@gmail.com"
                className="flex items-center justify-center gap-3 px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
               <Mail size={24} />
@@ -410,11 +410,6 @@ const App = () => {
                className="flex items-center justify-center gap-3 px-8 py-4 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-colors">
               <Linkedin size={24} />
               <span className="font-semibold">LinkedIn Profile</span>
-            </a>
-            <a href="https://www.instagram.com/ghanibhuti_gogoi/"
-               className="flex items-center justify-center gap-3 px-8 py-4 border border-pink-300 text-pink-700 rounded-lg hover:bg-pink-50 transition-colors">
-              <Instagram size={24} />
-              <span className="font-semibold">Instagram</span>
             </a>
           </div>
         </div>
