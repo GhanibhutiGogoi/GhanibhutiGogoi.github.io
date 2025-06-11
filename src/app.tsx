@@ -1,7 +1,17 @@
-import React from 'react';
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb, Menu, X } from 'lucide-react';
 
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Navigation */}
@@ -9,6 +19,8 @@ const App = () => {
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-xl font-bold text-slate-900">Ghanibhuti Gogoi</h1>
+
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-slate-600 hover:text-slate-900 transition-colors">About</a>
               <a href="#education" className="text-slate-600 hover:text-slate-900 transition-colors">Education</a>
@@ -17,7 +29,30 @@ const App = () => {
               <a href="#skills" className="text-slate-600 hover:text-slate-900 transition-colors">Skills</a>
               <a href="#contact" className="text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
             </div>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={toggleMenu}
+              className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-slate-200 pt-4">
+              <div className="flex flex-col space-y-3">
+                <a href="#about" onClick={closeMenu} className="text-slate-600 hover:text-slate-900 transition-colors">About</a>
+                <a href="#education" onClick={closeMenu} className="text-slate-600 hover:text-slate-900 transition-colors">Education</a>
+                <a href="#experience" onClick={closeMenu} className="text-slate-600 hover:text-slate-900 transition-colors">Experience</a>
+                <a href="#projects" onClick={closeMenu} className="text-slate-600 hover:text-slate-900 transition-colors">Projects</a>
+                <a href="#skills" onClick={closeMenu} className="text-slate-600 hover:text-slate-900 transition-colors">Skills</a>
+                <a href="#contact" onClick={closeMenu} className="text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -26,12 +61,11 @@ const App = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <div className="w-32 h-32 mx-auto mb-8">
-              <img 
-                src="/profile.jpg" 
-                alt="Ghanibhuti Gogoi" 
+              <img
+                src="/profile.jpg"
+                alt="Ghanibhuti Gogoi"
                 className="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"
               />
-            </div>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
               Ghanibhuti Gogoi
@@ -271,23 +305,23 @@ const App = () => {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Personal Skills</h3>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full" />
                   Highly interactive and co-operative
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full" />
                   Quick learner, can work under huge pressure
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full" />
                   Punctual, sincere, always speaks up new ideas
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full" />
                   Problem solver with great social skills
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full" />
                   Good communicator
                 </li>
               </ul>
@@ -295,15 +329,15 @@ const App = () => {
               <h3 className="text-2xl font-bold text-slate-900 mb-6 mt-8">Hobbies</h3>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-green-600 rounded-full" />
                   Playing badminton and video games
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-green-600 rounded-full" />
                   Music production and writing songs
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-green-600 rounded-full" />
                   Going out with people
                 </li>
               </ul>
