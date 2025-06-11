@@ -64,7 +64,7 @@ const App = () => {
             backgroundImage: "url('/Background.jpg')", // Change to your image filename
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.25, // Adjust for desired darkness
+            opacity: 0.0, // Adjust for desired darkness
           }}
           aria-hidden="true"
         />
