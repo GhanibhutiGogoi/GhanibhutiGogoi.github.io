@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb, Instagram, X, Menu } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb, Instagram, Menu, X } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -415,14 +415,6 @@ const App = () => {
                className="flex items-center justify-center gap-3 px-8 py-4 border border-pink-300 text-pink-700 rounded-lg hover:bg-pink-50 transition-colors">
               <Instagram size={24} />
               <span className="font-semibold">Instagram</span>
-            </a>
-            <a href="https://wa.me/918486941868"
-               className="flex items-center justify-center gap-3 px-8 py-4 border border-green-300 text-green-700 rounded-lg hover:bg-green-50 transition-colors">
-              {/* WhatsApp SVG icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12.004 2.003a9.994 9.994 0 0 0-8.48 15.47l-1.12 4.1a1 1 0 0 0 1.22 1.22l4.1-1.12a9.994 9.994 0 1 0 4.28-19.67Zm0 18.001a7.98 7.98 0 0 1-4.09-1.17l-.29-.17-2.43.66.65-2.42-.18-.29A7.99 7.99 0 1 1 12.004 20.004Zm4.36-5.42c-.24-.12-1.41-.7-1.62-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.36.11-.48.12-.12.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.41-.54-.42-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.33 1 2.49.14.16 1.7 2.6 4.13 3.54.58.2 1.03.32 1.38.41.58.14 1.1.12 1.52.07.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
-              </svg>
-              <span className="font-semibold">WhatsApp</span>
             </a>
           </div>
         </div>
