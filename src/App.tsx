@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb, Instagram, X, Menu, Phone, Globe, Cpu, Gamepad2, Brain, Heart } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, User, GraduationCap, Briefcase, Lightbulb, Instagram, X, Menu, Phone, Globe, Cpu, Gamepad2, Brain, Heart, Music } from 'lucide-react';
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -153,7 +153,7 @@ const App = () => {
               <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">11th and 12th</h3>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">11th and 12th - 92.2%</h3>
                   <p className="text-blue-600 font-semibold mb-2">Delhi Public School, ONGC Nazira</p>
                   <p className="text-slate-600 mb-4">Central Board of Secondary Education, India</p>
                   <div className="flex items-center gap-2 text-slate-500 text-sm">
@@ -165,7 +165,7 @@ const App = () => {
               <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Until 10th</h3>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Until 10th - 93.3%</h3>
                   <p className="text-blue-600 font-semibold mb-2">The New Star School, Rajgarh</p>
                   <p className="text-slate-600 mb-4">Secondary Education Board of Assam, India</p>
                   <div className="flex items-center gap-2 text-slate-500 text-sm">
@@ -192,6 +192,37 @@ const App = () => {
           </div>
 
           <div className="space-y-8">
+            <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">LLM Full Stack Software Engineering Intern</h3>
+                    <p className="text-lg text-blue-600 font-semibold">NOVO AI - HKSTP (heynovo.ai)</p>
+                  </div>
+                  <span className="px-4 py-1 bg-slate-100/50 text-slate-600 rounded-full text-sm font-medium mt-2 md:mt-0 w-fit backdrop-blur-sm">February 2026 – May 2026</span>
+                </div>
+                <p className="text-slate-500 mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span>
+                  Remote, HK
+                </p>
+                <ul className="text-slate-700 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>
+                    <span>Developed full-stack features for an AI-driven insurance platform utilizing LLMs and Computer Vision to detect over-billing and fraud.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>
+                    <span>Implemented automated analysis tools that cross-reference claim data with visual evidence to identify billing discrepancies.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>
+                    <span>Built scalable backend APIs and frontend interfaces to streamline remote claim assessments and improve processing accuracy.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10">
@@ -436,59 +467,82 @@ const App = () => {
 
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full group">
-              <div className="mb-4">
-                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center text-pink-600 mb-4 group-hover:scale-110 transition-transform">
-                  <Globe size={24} />
+            <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full group relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-rose-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="mb-4 relative z-10">
+                <div className="w-14 h-14 bg-gradient-to-br from-pink-100 to-pink-50 rounded-2xl flex items-center justify-center text-pink-600 mb-6 shadow-inner group-hover:scale-110 transition-transform duration-300">
+                  <Globe size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">University Bulletin Board Website</h3>
-                <p className="text-slate-600 mb-4 text-sm leading-relaxed">
-                  Designed and developed a fun and fully functional anonymous bulletin board platform tailored for university students. Built both the frontend and backend, ensuring a seamless and secure user experience. Managed local hosting and deployment.
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-pink-600 transition-colors">Tanoxi Technology (Company Website)</h3>
+                <p className="text-slate-600 mb-4 text-sm leading-relaxed font-medium">
+                  Developed a comprehensive commercial website allowing users to view products, place orders, and access company news. Designed and implemented a robust Admin Panel for managing products, tracking orders, and updating team/service information.
                 </p>
               </div>
-              <div className="mt-auto pt-4 border-t border-slate-100">
+              <div className="mt-auto pt-4 border-t border-white/30 relative z-10">
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-pink-50 text-pink-600 rounded-full text-xs font-medium border border-pink-100">Full Stack</span>
-                  <span className="px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-xs font-medium border border-orange-100">Web Development</span>
-                  <span className="px-3 py-1 bg-red-50 text-red-600 rounded-full text-xs font-medium border border-red-100">Security</span>
+                  <span className="px-3 py-1 bg-pink-100/50 text-pink-700 rounded-full text-xs font-semibold backdrop-blur-sm">Full Stack</span>
+                  <span className="px-3 py-1 bg-orange-100/50 text-orange-700 rounded-full text-xs font-semibold backdrop-blur-sm">React</span>
+                  <span className="px-3 py-1 bg-red-100/50 text-red-700 rounded-full text-xs font-semibold backdrop-blur-sm">Admin Panel</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full group">
-              <div className="mb-4">
-                <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 mb-4 group-hover:scale-110 transition-transform">
-                  <Cpu size={24} />
+            <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full group relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="mb-4 relative z-10">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-2xl flex items-center justify-center text-cyan-600 mb-6 shadow-inner group-hover:scale-110 transition-transform duration-300">
+                  <Cpu size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Smart Pump AR App</h3>
-                <p className="text-slate-600 mb-4 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-cyan-600 transition-colors">Smart Pump AR App</h3>
+                <p className="text-slate-600 mb-4 text-sm leading-relaxed font-medium">
                   Developed a smart pump visualization app with an interactive 360° front-end view driven by real-time sensor data. Integrated backend services to stream and sync operational statistics with the 3D interface. Customized camera drivers for lightweight hardware.
                 </p>
               </div>
-              <div className="mt-auto pt-4 border-t border-slate-100">
+              <div className="mt-auto pt-4 border-t border-white/30 relative z-10">
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-cyan-50 text-cyan-600 rounded-full text-xs font-medium border border-cyan-100">AR</span>
-                  <span className="px-3 py-1 bg-lime-50 text-lime-600 rounded-full text-xs font-medium border border-lime-100">IoT</span>
-                  <span className="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-xs font-medium border border-emerald-100">Raspberry Pi</span>
+                  <span className="px-3 py-1 bg-cyan-100/50 text-cyan-700 rounded-full text-xs font-semibold backdrop-blur-sm">AR</span>
+                  <span className="px-3 py-1 bg-lime-100/50 text-lime-700 rounded-full text-xs font-semibold backdrop-blur-sm">IoT</span>
+                  <span className="px-3 py-1 bg-emerald-100/50 text-emerald-700 rounded-full text-xs font-semibold backdrop-blur-sm">Raspberry Pi</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full group">
-              <div className="mb-4">
-                <div className="w-12 h-12 bg-violet-100 rounded-lg flex items-center justify-center text-violet-600 mb-4 group-hover:scale-110 transition-transform">
-                  <Gamepad2 size={24} />
+            <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full group relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="mb-4 relative z-10">
+                <div className="w-14 h-14 bg-gradient-to-br from-violet-100 to-violet-50 rounded-2xl flex items-center justify-center text-violet-600 mb-6 shadow-inner group-hover:scale-110 transition-transform duration-300">
+                  <Gamepad2 size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Game Development</h3>
-                <p className="text-slate-600 mb-4 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-violet-600 transition-colors">Game Development</h3>
+                <p className="text-slate-600 mb-4 text-sm leading-relaxed font-medium">
                   Developed and published a game called Pokemon Gen on Gamejolt. Indie developer, worked on all aspects including coding, 3D modeling, animation, game design etc.
                 </p>
               </div>
-              <div className="mt-auto pt-4 border-t border-slate-100">
+              <div className="mt-auto pt-4 border-t border-white/30 relative z-10">
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-violet-50 text-violet-600 rounded-full text-xs font-medium border border-violet-100">Game Dev</span>
-                  <span className="px-3 py-1 bg-fuchsia-50 text-fuchsia-600 rounded-full text-xs font-medium border border-fuchsia-100">3D Modeling</span>
-                  <span className="px-3 py-1 bg-rose-50 text-rose-600 rounded-full text-xs font-medium border border-rose-100">Animation</span>
+                  <span className="px-3 py-1 bg-violet-100/50 text-violet-700 rounded-full text-xs font-semibold backdrop-blur-sm">Game Dev</span>
+                  <span className="px-3 py-1 bg-fuchsia-100/50 text-fuchsia-700 rounded-full text-xs font-semibold backdrop-blur-sm">3D Modeling</span>
+                  <span className="px-3 py-1 bg-rose-100/50 text-rose-700 rounded-full text-xs font-semibold backdrop-blur-sm">Animation</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/40 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-white/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full group relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="mb-4 relative z-10">
+                <div className="w-14 h-14 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-2xl flex items-center justify-center text-yellow-600 mb-6 shadow-inner group-hover:scale-110 transition-transform duration-300">
+                  <Music size={28} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-yellow-600 transition-colors">Music Production</h3>
+                <p className="text-slate-600 mb-4 text-sm leading-relaxed font-medium">
+                  Published music under the artist name "Ghanibhuti Gogoi", available on all platforms. Music production, Lyrics Writing, Playback Singing, Mix and Mastering.
+                </p>
+              </div>
+              <div className="mt-auto pt-4 border-t border-white/30 relative z-10">
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-yellow-100/50 text-yellow-700 rounded-full text-xs font-semibold backdrop-blur-sm">Production</span>
+                  <span className="px-3 py-1 bg-orange-100/50 text-orange-700 rounded-full text-xs font-semibold backdrop-blur-sm">Vocals</span>
+                  <span className="px-3 py-1 bg-red-100/50 text-red-700 rounded-full text-xs font-semibold backdrop-blur-sm">Mixing</span>
                 </div>
               </div>
             </div>
