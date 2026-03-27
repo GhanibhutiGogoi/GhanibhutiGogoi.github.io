@@ -740,11 +740,12 @@ const App = () => {
 
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              { title: 'Outstanding International Student Scholarship', sub: 'Guangdong Government (10,000 RMB)', year: '2023 & 2025', icon: '01' },
-              { title: 'Excellence Admission Scholarship', sub: 'Fully paid tuition fee', icon: '02' },
-              { title: 'Best Volunteer Teacher Award', sub: '2024', icon: '03' },
-              { title: "Dean's List", sub: 'Fall Term 2023-24', icon: '04' },
-              { title: 'Third Prize, Provincial Level', sub: '4th University Electrical and Electronic Engineering Innovation Competition, 2024', icon: '05', wide: true },
+              { title: 'First Prize, TradeMaster Cup 2025', sub: 'HKUST-GZ Fintech Thrust (5,000 RMB)', year: '2025', icon: '01' },
+              { title: 'Outstanding International Student Scholarship', sub: 'Guangdong Government (10,000 RMB)', year: '2023 & 2025', icon: '02' },
+              { title: 'Excellence Admission Scholarship', sub: 'Fully paid tuition fee', icon: '03' },
+              { title: 'Best Volunteer Teacher Award', sub: '2024', icon: '04' },
+              { title: "Dean's List", sub: 'Fall Term 2023-24', icon: '05' },
+              { title: 'Third Prize, Provincial Level', sub: '4th University Electrical and Electronic Engineering Innovation Competition, 2024', icon: '06', wide: true },
             ].map((ach, i) => (
               <RevealCard key={i} delay={i * 0.1} className={ach.wide ? 'sm:col-span-2' : ''}>
                 <div className="glass-card rounded-xl sm:rounded-2xl p-4 sm:p-6 transition-all duration-500 group flex items-start gap-3 sm:gap-5 h-full">
