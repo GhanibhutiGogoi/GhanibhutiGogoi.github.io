@@ -740,7 +740,7 @@ const App = () => {
 
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              { title: 'First Prize, TradeMaster Cup 2025', sub: 'HKUST-GZ Fintech Thrust (5,000 RMB)', year: '2025', icon: '01' },
+              { title: 'First Prize, TradeMaster Cup 2025', sub: 'HKUST-GZ Fintech Thrust (5,000 RMB)', year: '2025', icon: '01', links: [{ label: 'GitHub', href: 'https://github.com/GhanibhutiGogoi/TradeMasterCup' }, { label: 'Kaggle', href: 'https://www.kaggle.com/competitions/trademaster25' }] },
               { title: 'Outstanding International Student Scholarship', sub: 'Guangdong Government (10,000 RMB)', year: '2023 & 2025', icon: '02' },
               { title: 'Excellence Admission Scholarship', sub: 'Fully paid tuition fee', icon: '03' },
               { title: 'Best Volunteer Teacher Award', sub: '2024', icon: '04' },
@@ -756,6 +756,24 @@ const App = () => {
                     <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-violet-400 transition-colors leading-snug">{ach.title}</h3>
                     <p className="text-zinc-500 text-xs sm:text-sm mt-1">{ach.sub}</p>
                     {ach.year && <p className="text-zinc-600 text-xs mt-1">{ach.year}</p>}
+                    {ach.links && (
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {ach.links.map((link) => (
+                          <a
+                            key={link.label}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs text-violet-400 hover:text-violet-300 transition-colors"
+                            onMouseEnter={() => setIsHovering(true)}
+                            onMouseLeave={() => setIsHovering(false)}
+                          >
+                            <ExternalLink size={12} />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </RevealCard>
