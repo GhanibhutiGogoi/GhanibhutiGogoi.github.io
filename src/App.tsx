@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, GraduationCap, Briefcase, Lightbulb, Instagram, Menu, Phone, Globe, Cpu, Gamepad2, Brain, Heart, Music, ChevronDown, FileText, ArrowUpRight, X } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, ExternalLink, Award, Code, GraduationCap, Briefcase, Lightbulb, Instagram, Menu, Globe, Cpu, Gamepad2, Brain, Heart, Music, ChevronDown, X } from 'lucide-react';
 
 const SectionHeading = ({ children, icon: Icon }: { children: string; icon: React.ElementType }) => {
   const ref = useRef(null);
@@ -458,15 +458,6 @@ const App = () => {
               <Linkedin size={18} />
               LinkedIn
             </a>
-            <a
-              href="tel:+918486941868"
-              className="magnetic-btn flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 bg-white/5 border border-white/10 text-white rounded-full font-medium hover:bg-white/10 transition-all hover:-translate-y-1"
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
-            >
-              <Phone size={18} />
-              +91 84869 41868
-            </a>
           </motion.div>
 
           {/* Location */}
@@ -879,8 +870,7 @@ const App = () => {
               {[
                 { href: 'mailto:ghanibhutigogoi@gmail.com', icon: Mail, label: 'Email Me', primary: true },
                 { href: 'https://www.linkedin.com/in/ghanibhuti-gogoi-365820229/', icon: Linkedin, label: 'LinkedIn' },
-                { href: 'https://www.instagram.com/ghanibhuti_gogoi/', icon: Instagram, label: 'Instagram' },
-                { href: 'https://wa.me/918486941868', icon: Phone, label: 'WhatsApp' }
+                { href: 'https://www.instagram.com/ghanibhuti_gogoi/', icon: Instagram, label: 'Instagram' }
               ].map((link) => (
                 <motion.a
                   key={link.label}
@@ -901,25 +891,6 @@ const App = () => {
               ))}
             </div>
 
-            {/* CV Download */}
-            <RevealCard delay={0.3}>
-              <div className="mt-2 sm:mt-4">
-                <motion.a
-                  href="/CV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 rounded-xl sm:rounded-2xl text-amber-400 font-semibold text-base sm:text-lg hover:from-amber-500/20 hover:to-orange-500/20 hover:border-amber-500/50 transition-all group"
-                  onMouseEnter={() => setIsHovering(true)}
-                  onMouseLeave={() => setIsHovering(false)}
-                >
-                  <FileText size={20} className="group-hover:animate-bounce" />
-                  Download my CV
-                  <ArrowUpRight size={16} className="opacity-50 group-hover:opacity-100 transition-opacity" />
-                </motion.a>
-              </div>
-            </RevealCard>
           </RevealCard>
         </div>
       </section>
